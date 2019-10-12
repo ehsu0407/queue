@@ -19,7 +19,7 @@ class Base(models.AbstractModel):
     """
     _inherit = 'base'
 
-    @api.model_cr
+    @api.model
     def _register_hook(self):
         """Register marked jobs"""
         super(Base, self)._register_hook()
@@ -31,7 +31,6 @@ class Base(models.AbstractModel):
         for job_method in job_methods:
             self.env['queue.job.function']._register_job(self, job_method)
 
-    @api.multi
     def with_delay(self, priority=None, eta=None,
                    max_retries=None, description=None,
                    channel=None, identity_key=None):

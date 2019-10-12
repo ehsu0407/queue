@@ -24,5 +24,5 @@
     'demo': [
     ],
     'qweb': ['static/src/xml/base.xml'],
-    'installable': False,
+    'installable': True,
 }

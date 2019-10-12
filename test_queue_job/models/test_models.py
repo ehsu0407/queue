@@ -10,15 +10,12 @@ class QueueJob(models.Model):
 
     _inherit = 'queue.job'
 
-    @api.multi
     def testing_related_method(self, **kwargs):
         return self, kwargs
 
-    @api.multi
     def testing_related__none(self, **kwargs):
         return None
 
-    @api.multi
     def testing_related__url(self, **kwargs):
         assert 'url' in kwargs, "url required"
         subject = self.args[0]
@@ -38,7 +35,6 @@ class TestQueueJob(models.Model):
 
     @job
     @related_action(action='testing_related_method')
-    @api.multi
     def testing_method(self, *args, **kwargs):
         """ Method used for tests
 

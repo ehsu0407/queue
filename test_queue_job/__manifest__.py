@@ -11,5 +11,5 @@
  'website': 'http://www.camptocamp.com',
  'data': ['security/ir.model.access.csv',
           ],
- 'installable': False,
+ 'installable': True,
  }

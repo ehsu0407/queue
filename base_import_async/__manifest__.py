@@ -20,5 +20,5 @@
     'qweb': [
         'static/src/xml/import.xml',
     ],
-    'installable': False,
+    'installable': True,
 }
