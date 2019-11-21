@@ -1,5 +1,5 @@
 # Copyright 2013-2016 Camptocamp
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
 import functools
 import hashlib
@@ -493,7 +493,7 @@ class Job(object):
         if "company_id" in env.context:
             company_id = env.context["company_id"]
         else:
-            company_id = self.env.company.id
+            company_id = env.company.id
         self.company_id = company_id
         self._eta = None
         self.eta = eta

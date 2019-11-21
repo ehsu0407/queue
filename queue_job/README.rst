@@ -10,9 +10,9 @@ Job Queue
 .. |badge1| image:: https://img.shields.io/badge/maturity-Mature-brightgreen.png
     :target: https://odoo-community.org/page/development-status
     :alt: Mature
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
-    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-    :alt: License: AGPL-3
+.. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
+    :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
+    :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fqueue-lightgray.png?logo=github
     :target: https://github.com/OCA/queue/tree/13.0/queue_job
     :alt: OCA/queue
@@ -208,6 +208,15 @@ Next
 ~~~~
 
 
+13.0.1.1.0 (2019-11-01)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Important: the license has been changed from AGPL3 to LGPL3.
+
+* Remove deprecated default company method
+  (details on `#180 <https://github.com/OCA/queue/pull/180>`_)
+
+
 13.0.1.0.0 (2019-10-14)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -242,6 +251,7 @@ Contributors
 * David Lefever <dl@taktik.be>
 * Laurent Mignon <laurent.mignon@acsone.eu>
 * Laetitia Gangloff <laetitia.gangloff@acsone.eu>
+* Cédric Pigeon <cedric.pigeon@acsone.eu>
 
 Maintainers
 ~~~~~~~~~~~
